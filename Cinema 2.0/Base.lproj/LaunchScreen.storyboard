@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-5I-RcO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="fAh-H0-bNq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LichChieuVN.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUa-Mt-hmr">
+                                        <rect key="frame" x="42.5" y="333" width="290" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Copyright Nukan Trần" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-B8-Pa5">
+                                        <rect key="frame" x="107.5" y="375" width="163.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.27843137254901962" green="0.63921568627450975" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7022898706896552" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1Da-B8-Pa5" firstAttribute="centerX" secondItem="fAh-H0-bNq" secondAttribute="centerX" constant="1" id="FXP-3v-72r"/>
+                                    <constraint firstItem="OUa-Mt-hmr" firstAttribute="centerY" secondItem="fAh-H0-bNq" secondAttribute="centerY" constant="20" id="MmE-ml-1OI"/>
+                                    <constraint firstItem="OUa-Mt-hmr" firstAttribute="centerX" secondItem="fAh-H0-bNq" secondAttribute="centerX" id="fqf-52-3p5"/>
+                                    <constraint firstItem="1Da-B8-Pa5" firstAttribute="top" secondItem="OUa-Mt-hmr" secondAttribute="bottom" id="lxf-Ji-9Qb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zc5-5I-RcO" secondAttribute="trailing" id="3FS-uz-gRT"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fAh-H0-bNq" secondAttribute="bottom" id="D39-3e-5Qi"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Zc5-5I-RcO" secondAttribute="bottom" id="Vlp-gv-AY1"/>
+                            <constraint firstAttribute="trailing" secondItem="fAh-H0-bNq" secondAttribute="trailing" id="XCZ-bc-Dkz"/>
+                            <constraint firstItem="Zc5-5I-RcO" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="YNR-WH-CD8"/>
+                            <constraint firstItem="Zc5-5I-RcO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hC9-mX-s3y"/>
+                            <constraint firstItem="fAh-H0-bNq" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="m7W-Ao-7mI"/>
+                            <constraint firstItem="fAh-H0-bNq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="p8P-l3-Cyq"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="157" height="253"/>
+    </resources>
+</document>
